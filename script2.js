@@ -23,6 +23,23 @@ if(usernameValue === '') {
     setSucessFor(username)
 }
 
+if(emailValue === '') {
+    setErrorFor(email, 'O email do usuário é obrigatório')
+} else{
+    setSucessFor(email)
+}
+
+if(passwordValue === '') {
+    setErrorFor(password, 'Senha obrigatória')
+} else{
+    setSucessFor(password)
+}
+
+if(passwordConfirmationValue === '') {
+    setErrorFor(passwordConfirmation, 'senha obrigatória')
+} else{
+    setSucessFor(passwordConfirmation)
+}
 }
 
 function setErrorFor(input, message){
